@@ -5,20 +5,20 @@
 class MiniLaunch < Formula
   desc "A simple cross-platform service daemon manager for macOS and Linux"
   homepage "https://github.com/simpossible/mini_launch"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/simpossible/mini_launch/releases/download/v0.1.0/mini_launch_0.1.0_darwin_x86_64.tar.gz"
-      sha256 "99538d9b7074b3f30aa1f7e7f85cd85aa30d7b51dee2c44405414880cb0e8a22"
+      url "https://github.com/simpossible/mini_launch/releases/download/v0.2.0/mini_launch_0.2.0_darwin_x86_64.tar.gz"
+      sha256 "50652b15b934e6f0cdaccd98661fce5dafff8478bb69f40b3d6fd9dc722ec00e"
 
       define_method(:install) do
         bin.install "mini_launch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/simpossible/mini_launch/releases/download/v0.1.0/mini_launch_0.1.0_darwin_arm64.tar.gz"
-      sha256 "ad78bf437589f40fd7decd074b365b39b745c659e05940457317ec011587ebda"
+      url "https://github.com/simpossible/mini_launch/releases/download/v0.2.0/mini_launch_0.2.0_darwin_arm64.tar.gz"
+      sha256 "0142d227c3bc0c344fcc78a18c18ecf71f9ace9551de7998d3f63778fd3671e2"
 
       define_method(:install) do
         bin.install "mini_launch"
@@ -28,15 +28,15 @@ class MiniLaunch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/simpossible/mini_launch/releases/download/v0.1.0/mini_launch_0.1.0_linux_x86_64.tar.gz"
-      sha256 "b188c428737b896466ac69a714f36cbb18e6e658d45dc7a6fedfa16c5958dfe4"
+      url "https://github.com/simpossible/mini_launch/releases/download/v0.2.0/mini_launch_0.2.0_linux_x86_64.tar.gz"
+      sha256 "57faaf479a9baf7a6903d0d3e0005e434c8910b1f62856a532c4ddd747543916"
       define_method(:install) do
         bin.install "mini_launch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/simpossible/mini_launch/releases/download/v0.1.0/mini_launch_0.1.0_linux_arm64.tar.gz"
-      sha256 "013a076e75614c26a64611fd4167f7d2c097bce06a8f77a2dfb11bf5983c5c2c"
+      url "https://github.com/simpossible/mini_launch/releases/download/v0.2.0/mini_launch_0.2.0_linux_arm64.tar.gz"
+      sha256 "e6678dcd75eb53bd1f9f54842bf12f6e6eb221a3d12753de8bc87753a35b1c93"
       define_method(:install) do
         bin.install "mini_launch"
       end
