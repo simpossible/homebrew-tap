@@ -1,17 +1,17 @@
 class TokenGate < Formula
   desc "Local proxy gateway for managing multiple Claude API keys"
   homepage "https://github.com/simpossible/token_gate"
-  version "0.1.8"
+  version "0.1.9"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/simpossible/token_gate/releases/download/v#{version}/token_gate_darwin_arm64.tar.gz"
-      sha256 "a097ffbfe272f3d76322a6ef86713c3624c1237215d770853d11a7054bfd2f95"
+      sha256 "38e9358bb8256e2ec29c5ce334b55d1e392b99462c06bbf5156412b1e59e9938"
     end
     on_intel do
       url "https://github.com/simpossible/token_gate/releases/download/v#{version}/token_gate_darwin_amd64.tar.gz"
-      sha256 "ba709b58b3cc7df761cfdfc96c63e7c79ff2616f6661aaa416804bef8a4e69c0"
+      sha256 "6bc446a5310c6b396eccc64706840efd04357d64f371968cc28b70c3acbe70d5"
     end
   end
 
