@@ -1,6 +1,6 @@
 cask "token-gate" do
-  version "0.2.2"
-  sha256 "2e1deeeb645e3d3c9a0c3f8f2bf2bf9488583751b5bb12be9b51c77cb430f372"
+  version "0.2.3"
+  sha256 "0abc1e9dd19099eb34e8430919af0131f71a21f1d283dca5c4c24c1094e73cd6"
 
   url "https://github.com/simpossible/token_gate/releases/download/v#{version}/TokenGate-#{version}.dmg"
   name "Token Gate"
@@ -9,5 +9,5 @@ cask "token-gate" do
 
   depends_on macos: ">= :catalina"
 
-  app "app.app"
+  app "TokenGate.app"
 end
