@@ -1,6 +1,6 @@
 cask "token-gate" do
-  version "0.2.6"
-  sha256 "8226a615ae8bd8753432ccf3dea86621be978ebc938452818eaed91709c4f8b8"
+  version "0.2.7"
+  sha256 "dfdc3926286825843e12f4967deb392d12b967535c392a05a7152293bc786c4f"
 
   url "https://github.com/simpossible/token_gate/releases/download/v#{version}/TokenGate-#{version}.dmg"
   name "Token Gate"
